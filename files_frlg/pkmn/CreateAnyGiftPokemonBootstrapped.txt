@@ -29,5 +29,6 @@ str r12, [r11]!
 mov r12, {ScriptEnd} ?
 0xE7ABCCAE ; STR r12, [r11, lr, LSR #25]!
 0xE7ABCCAE ; STR r12, [r11, lr, LSR #25]!
+0xE7ABCCAE ; STR r12, [r11, lr, LSR #25]!
 Adc r12, 0x02 ?
 0xE7ABCCAE ; STR r12, [r11, lr, LSR #25]!

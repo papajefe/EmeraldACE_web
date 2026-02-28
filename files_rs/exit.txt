@@ -445,9 +445,9 @@ ldr r0, [r15, -0x4]             ;  Load CB2_LoadMap2SJAP
 @@ fill = false
 @@
 
-0xe3e3c0ff ; MVN r12, #0xff
-BIC r12, r12, #0xf8000002
-ADCS r15, r12, #0x314
+0xe3bfc0ff ; MOVS r12, #0xff
+ADCS r12, r12, #0xf8000002
+RSC r15, r12, #0x318
 
 ====================
 
@@ -456,9 +456,9 @@ ADCS r15, r12, #0x314
 @@ fill = false
 @@
 
-0xe3e3c0ff ; MVN r12, #0xff
-BIC r12, r12, #0xf8000002
-ADCS r15, r12, #0x314
+0xe3bfc0ff ; MOVS r12, #0xff
+ADCS r12, r12, #0xf8000002
+RSC r15, r12, #0x318
 
 ====================
 
@@ -467,9 +467,9 @@ ADCS r15, r12, #0x314
 @@ fill = false
 @@
 
-0xe3e3c0ff ; MVN r12, #0xff
-BIC r12, r12, #0xf8000002
-ADCS r15, r12, #0x314
+0xe3bfc0ff ; MOVS r12, #0xff
+ADCS r12, r12, #0xf8000002
+RSC r15, r12, #0x318
 
 ====================
 
@@ -478,9 +478,9 @@ ADCS r15, r12, #0x314
 @@ fill = false
 @@
 
-0xe3e300ff ; MVN r0, #0xff
-BIC r12, r0, #0xf8000002
-ADCS r15, r12, #0x33c
+0xe3bf00ff ; MOVS r0, #0xff
+ADCS r12, r0, #0xf8000002
+RSC r15, r12, #0x340
 
 
 ====================
@@ -490,9 +490,9 @@ ADCS r15, r12, #0x33c
 @@ fill = false
 @@
 
-0xe3e300ff ; MVN r0, #0xff
-BIC r12, r0, #0xf8000002
-ADCS r15, r12, #0x33c
+0xe3bf00ff ; MOVS r0, #0xff
+ADCS r12, r0, #0xf8000002
+RSC r15, r12, #0x340
 
 ====================
 
@@ -501,9 +501,9 @@ ADCS r15, r12, #0x33c
 @@ fill = false
 @@
 
-0xe3e300ff ; MVN r0, #0xff
-BIC r12, r0, #0xf8000002
-ADCS r15, r12, #0x33c
+0xe3bf00ff ; MOVS r0, #0xff
+ADCS r12, r0, #0xf8000002
+RSC r15, r12, #0x340
 
 ====================
 
@@ -561,8 +561,8 @@ ADCS r15, r12, #0x33c
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x348
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x348
 
 ====================
 
@@ -571,8 +571,8 @@ ADCS r15, r12, #0x348
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x348
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x348
 
 ====================
 
@@ -581,8 +581,8 @@ ADCS r15, r12, #0x348
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x348
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x348
 
 ====================
 
@@ -596,8 +596,8 @@ ADCS r15, r12, #0x348
 // exist for ease of using `LANG` to substitute in the individual
 // language.
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -611,8 +611,8 @@ ADCS r15, r12, #0x370
 // exist for ease of using `LANG` to substitute in the individual
 // language.
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -626,8 +626,8 @@ ADCS r15, r12, #0x370
 // exist for ease of using `LANG` to substitute in the individual
 // language.
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -642,8 +642,8 @@ ADCS r15, r12, #0x370
 // language.
 
 BIC r0, r0, #0xff
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -658,8 +658,8 @@ ADCS r15, r12, #0x370
 // language.
 
 BIC r0, r0, #0xff
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -674,8 +674,8 @@ ADCS r15, r12, #0x370
 // language.
 
 BIC r0, r0, #0xff
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 
 ====================
@@ -685,8 +685,8 @@ ADCS r15, r12, #0x370
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x348
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x348
 
 ====================
 
@@ -695,8 +695,8 @@ ADCS r15, r12, #0x348
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x348
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x348
 
 ====================
 
@@ -705,8 +705,8 @@ ADCS r15, r12, #0x348
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x348
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x348
 
 ====================
 
@@ -715,8 +715,8 @@ ADCS r15, r12, #0x348
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -725,8 +725,8 @@ ADCS r15, r12, #0x370
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -735,8 +735,8 @@ ADCS r15, r12, #0x370
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -746,8 +746,8 @@ ADCS r15, r12, #0x370
 @@
 
 BIC r0, r0, #0xff
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -757,8 +757,8 @@ ADCS r15, r12, #0x370
 @@
 
 BIC r0, r0, #0xff
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -768,8 +768,8 @@ ADCS r15, r12, #0x370
 @@
 
 BIC r0, r0, #0xff
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -778,8 +778,8 @@ ADCS r15, r12, #0x370
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x348
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x348
 
 ====================
 
@@ -788,8 +788,8 @@ ADCS r15, r12, #0x348
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x348
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x348
 
 ====================
 
@@ -798,8 +798,8 @@ ADCS r15, r12, #0x348
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x348
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x348
 
 ====================
 
@@ -808,8 +808,8 @@ ADCS r15, r12, #0x348
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -818,8 +818,8 @@ ADCS r15, r12, #0x370
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -828,8 +828,8 @@ ADCS r15, r12, #0x370
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -839,8 +839,8 @@ ADCS r15, r12, #0x370
 @@
 
 BIC r0, r0, #0xff
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -850,8 +850,8 @@ ADCS r15, r12, #0x370
 @@
 
 BIC r0, r0, #0xff
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -861,8 +861,8 @@ ADCS r15, r12, #0x370
 @@
 
 BIC r0, r0, #0xff
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -871,8 +871,8 @@ ADCS r15, r12, #0x370
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x348
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x348
 
 ====================
 
@@ -881,8 +881,8 @@ ADCS r15, r12, #0x348
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x348
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x348
 
 ====================
 
@@ -891,8 +891,8 @@ ADCS r15, r12, #0x348
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x348
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x348
 
 ====================
 
@@ -901,8 +901,8 @@ ADCS r15, r12, #0x348
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -911,8 +911,8 @@ ADCS r15, r12, #0x370
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -921,8 +921,8 @@ ADCS r15, r12, #0x370
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -932,8 +932,8 @@ ADCS r15, r12, #0x370
 @@
 
 BIC r0, r0, #0xff
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -943,8 +943,8 @@ ADCS r15, r12, #0x370
 @@
 
 BIC r0, r0, #0xff
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -954,8 +954,8 @@ ADCS r15, r12, #0x370
 @@
 
 BIC r0, r0, #0xff
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -964,8 +964,8 @@ ADCS r15, r12, #0x370
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x348
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x348
 
 ====================
 
@@ -974,8 +974,8 @@ ADCS r15, r12, #0x348
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x348
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x348
 
 ====================
 
@@ -984,8 +984,8 @@ ADCS r15, r12, #0x348
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x348
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x348
 
 ====================
 
@@ -994,8 +994,8 @@ ADCS r15, r12, #0x348
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -1004,8 +1004,8 @@ ADCS r15, r12, #0x370
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -1014,8 +1014,8 @@ ADCS r15, r12, #0x370
 @@ fill = false
 @@
 
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -1025,8 +1025,8 @@ ADCS r15, r12, #0x370
 @@
 
 BIC r0, r0, #0xff
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -1036,8 +1036,8 @@ ADCS r15, r12, #0x370
 @@
 
 BIC r0, r0, #0xff
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -1047,8 +1047,8 @@ ADCS r15, r12, #0x370
 @@
 
 BIC r0, r0, #0xff
-0xe3bdc3c2 ; MOVS r12, #0x8000003
-ADCS r15, r12, #0x370
+0xe3e3c3c2 ; MVN r12, #0x8000003
+RSC r15, r12, #0x370
 
 ====================
 
@@ -1057,7 +1057,7 @@ ADCS r15, r12, #0x370
 @@ fill = false
 @@
 
-movs r15, #0x324
+mov r15, #0x324
 
 ====================
 
@@ -1066,7 +1066,7 @@ movs r15, #0x324
 @@ fill = false
 @@
 
-movs r15, #0x324
+mov r15, #0x324
 
 ====================
 
@@ -1075,7 +1075,7 @@ movs r15, #0x324
 @@ fill = false
 @@
 
-movs r15, #0x324
+mov r15, #0x324
 
 ====================
 
@@ -1084,7 +1084,7 @@ movs r15, #0x324
 @@ fill = false
 @@
 
-movs r15, #0x354
+mov r15, #0x354
 
 ====================
 
@@ -1093,7 +1093,7 @@ movs r15, #0x354
 @@ fill = false
 @@
 
-movs r15, #0x354
+mov r15, #0x354
 
 ====================
 
@@ -1102,7 +1102,7 @@ movs r15, #0x354
 @@ fill = false
 @@
 
-movs r15, #0x354
+mov r15, #0x354
 
 ====================
 
@@ -1112,7 +1112,7 @@ movs r15, #0x354
 @@
 
 mov r0, #0
-movs r15, #0x354
+mov r15, #0x354
 
 ====================
 
@@ -1122,7 +1122,7 @@ movs r15, #0x354
 @@
 
 mov r0, #0
-movs r15, #0x354
+mov r15, #0x354
 
 ====================
 
@@ -1132,7 +1132,7 @@ movs r15, #0x354
 @@
 
 mov r0, #0
-movs r15, #0x354
+mov r15, #0x354
 
 ====================
 
